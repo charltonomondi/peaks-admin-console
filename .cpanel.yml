@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/$USER/admin.peakshotels.co.ke
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -r deployment/public_html/. $DEPLOYPATH/
